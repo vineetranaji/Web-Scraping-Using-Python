@@ -8,7 +8,7 @@ conn.execute("""CREATE TABLE IF NOT EXISTS DATA
           WORD TEXT NOT NULL,
           COUNT INT NOT NULL)""")
 def get_words(x):                         #creating a function for doing hte desired task
-  file = '/Users/Avii/Desktop/Project/test.xlsx'             #test.xlsx is the workbook containing the webpages and words to search for,please change location of file
+  file = '/Users/vineet/Desktop/Project/test.xlsx'             #test.xlsx is the workbook containing the webpages and words to search for,please change location of file
   wb = xlrd.open_workbook(file)              #OPEN WORKBOOK
   sheet = wb.sheet_by_index(x)
   url_list = []
